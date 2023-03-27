@@ -43,6 +43,8 @@ Delete existing table
 -- Comments are written with double dashes "--" rather than hastag (#)
 
 DROP TABLE IF EXISTS drivers;
+-- SQLBook: Code
+DROP TABLE IF EXISTS drivers;
 -- SQLBook: Markup
 <font size = "5">
 
@@ -99,7 +101,9 @@ Try it yourself!
 -- Select a new driver id (needs to be unique)
 -- Make sure to deparate arguments by a semicolon!
 
-
+INSERT INTO drivers VALUES (5, 'NEha Murthy', 'Indian', 14);
+INSERT INTO drivers VALUES (6, 'Leslie Flores', 'Salvadorian', 105);
+INSERT INTO drivers VALUES(15,'a','b',1)
 
 -- SQLBook: Markup
 # <span style="color:darkblue"> II. Dataset Operations </span>
@@ -186,7 +190,8 @@ Try it yourself!
 with more than 60 victories
 -- SQLBook: Code
 -- Write your own code!
-
+SELECT nationality, driver_id FROM drivers
+WHERE victories > 60;
 
 
 -- SQLBook: Markup
